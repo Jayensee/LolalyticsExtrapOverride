@@ -30,7 +30,7 @@ Then press Find and search for
 `} else {`     
 (there should only be one in the entire file, on line 3048)
 
-Delete everything in the curly brackets after the else and paste all the code in override.js (from this repo) inside those curly brackets.
+Delete everything in the curly brackets after the else (which should be lines 3049-3074) and paste all the code in override.js (from this repo) inside those curly brackets.
 
 After saving and exiting you should be done. 
 

@@ -51,9 +51,9 @@
     }
 
     c.sort(function (e, t) {
-        console.log("Lolalytics Extrap Override is installed");
         return t[2] / t[1] - e[2] / e[1]                // use this return to sort by winrate
         // return t[1] - e[1]                           // use this return to sort by pickrate
     }
     );
+    console.log("Lolalytics Extrap Override is installed");
 }
