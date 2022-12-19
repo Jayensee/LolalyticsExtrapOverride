@@ -18,12 +18,12 @@ The code in this repo changes the Extrapolated Sets tab to show the stats of all
 ## Setup
 In order to perform the override you need to use an extension called [Resource Override](https://github.com/kylepaulsen/ResourceOverride), which works with Firefox and Chrome.
 
-After you've installed the extension, open it and go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
-
-Next you need to open any champion page on lolalytics. 
+First you need to open any champion page on lolalytics. 
 On it press right-click and then Inspect, then open the Debugger tab if you're on Firefox or the Sources tab if you're on Chrome.    
 Then navigate to lolalytics.com > static > js > 548.c14c798a.chunk.js   
 Select the text editor and press ctrl-a to select all the code and copy it.   
+
+Open the Resource Override extension and go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
 
 After you've copied the code go back to the Resource Override extension, press Edit File, and paste the code then press Beautify JS.    
 Then press Find and search for 
