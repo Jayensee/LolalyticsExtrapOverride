@@ -1,4 +1,5 @@
 {
+    // Modded itemsets
     e <= 12 ? (l = "itemSet",
         n = e - 7,
         s = 5) : (l = "itemBootSet",
@@ -42,7 +43,7 @@
         let z_score = 2.326;
         let z_score_squared = 5.410276;
         let winrate = d[a][1] / d[a][0];
-        let winrate_adj = Math.max(winrate - 1 / (2 * d[a][0]));
+        let winrate_adj = Math.max(winrate - 1 / (2 * d[a][0]),0);
         let nwins_adj = winrate_adj * d[a][0];
         let nlosses_adj = d[a][0] - nwins_adj;
         let lower_bound = (nwins_adj + z_score_squared / 2) / (d[a][0] + z_score_squared) - z_score / (d[a][0] + z_score_squared) * Math.sqrt((nwins_adj * nlosses_adj) / d[a][0] + z_score_squared / 4);
