@@ -20,7 +20,7 @@ In order to perform the override you need to use an extension called [Resource O
 
 First you need to open any champion page on lolalytics. 
 On it press right-click and then Inspect, then open the Debugger tab if you're on Firefox or the Sources tab if you're on Chrome.    
-Then navigate to lolalytics.com > static > js > 548.c14c798a.chunk.js   
+Then navigate to lolalytics.com > static > js > 548.90b09f85.chunk.js (this filename changes whenever lolalytics is updated, but so far it has always started with 548, so if you don't find this exact filename then see if there's another that starts with 548)
 Select the text editor and press ctrl-a to select all the code and copy it.   
 
 Open the Resource Override extension and go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
@@ -36,3 +36,4 @@ After saving and exiting you should be done.
 
 You can verify the instalation by checking the Extrapolated Sets on any champion with the devtools (the Inspect sidebar) open. If everything is working correctly then the phrase "Lolalytics Extrap Override is installed" should be printed in the console.
 
+### Unfortunately, the file being overridden changes name every once in a while, so if the override stops working you will have to change the name of the file in the override to match it.
