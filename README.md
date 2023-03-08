@@ -28,7 +28,7 @@ Open the Resource Override extension and go to Options > Load Rules and select l
 After you've copied the code go back to the Resource Override extension, press Edit File, and paste the code then press Beautify JS.    
 Then press Find and search for 
 `} else {`     
-(there should only be one in the entire file, on line 3048)
+(there should only be one in the entire file, at the time of writing it's on line 3048, but updates may change this)
 
 Delete everything in the curly brackets after the else (which should be lines 3049-3074) and paste all the code in override.js (from this repo) inside those curly brackets.
 
