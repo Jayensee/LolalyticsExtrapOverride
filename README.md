@@ -36,4 +36,4 @@ After saving and exiting you should be done.
 
 You can verify the instalation by checking the Extrapolated Sets on any champion with the devtools (the Inspect sidebar) open. If everything is working correctly then the phrase "Lolalytics Extrap Override is installed" should be printed in the console.
 
-### Unfortunately, the file being overridden changes name every once in a while, so if the override stops working you will have to change the name of the file in the override to match it.
+### Whenever there is a significant change to lolalytics you'll need to redo these steps if you want to see the change.
