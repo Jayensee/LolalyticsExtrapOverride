@@ -10,7 +10,7 @@ Lolalytics has 3 item set tabs:
 
 While this is more information than other sites provide, neither of the 3 tabs is adequate if you want to see the stats of everyone that went for the builds shown. To get that you have to add the Extrapolated Sets to the Actually built Sets and subtract the Exact Item Counts (the Exact Item Counts are included in the other tabs, so you have to subtract to avoid double-counting them).
 
-Besides that, sorting sets by winrate, as is done in the Extrapolated Sets tab runs into issues when the game counts are low, which is why Lolalytics excluudes all builds with under 100 games in it. A more robust way to address this issue is to estimate a winrate that we can be sure is lower than the actual winrate the build would have with more games and then sort by that winrate. The code in this repo uses the [Wilson score interval with continuity correction](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval#Wilson_score_interval_with_continuity_correction) to estimate winrates that have a 99% chance to be lower than the build's actual winrate.
+Besides that, sorting sets by winrate, as is done in the Extrapolated Sets tab runs into issues when the game counts are low, which is why Lolalytics excludes all builds with under 100 games in it. A more robust way to address this issue is to estimate a winrate that we can be sure is lower than the actual winrate the build would have with more games and then sort by that winrate. The code in this repo uses the [Wilson score interval with continuity correction](https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval#Wilson_score_interval_with_continuity_correction) to estimate winrates that have a 99% chance to be lower than the build's actual winrate.
 
 ## Solution
 The code in this repo changes the Extrapolated Sets tab to show the stats of all the games where people went for the builds (as described in the previous section). It also changes the winrates of that tab such that there is approximately a 99% chance of the winrate shown being lower than what the build would get if it had infinite games.
@@ -20,7 +20,7 @@ In order to perform the override you need to use an extension called [Resource O
 
 First you need to open any champion page on lolalytics. 
 On it press right-click and then Inspect, then open the Debugger tab if you're on Firefox or the Sources tab if you're on Chrome.    
-Then navigate to lolalytics.com > static > js > 665.0233b812.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 665)
+Then navigate to lolalytics.com > static > js > 485.af628fbb.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 485)
 Select the text editor and press ctrl-a to select all the code and copy it.   
 
 Open the Resource Override extension and go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
