@@ -20,7 +20,7 @@ In order to perform the override you need to use an extension called [Resource O
 
 First you need to open any champion page on lolalytics. 
 On it press right-click and then Inspect, then open the Debugger tab if you're on Firefox or the Sources tab if you're on Chrome.    
-Then navigate to lolalytics.com > static > js > 485.af628fbb.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 485)
+Then navigate to lolalytics.com > static > js > 665.0233b812.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 665)
 Select the text editor and press ctrl-a to select all the code and copy it.   
 
 Open the Resource Override extension and go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
