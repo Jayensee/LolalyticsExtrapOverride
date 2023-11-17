@@ -20,7 +20,7 @@ In order to perform the override you need to use an extension called [Resource O
 
 First you need to open any champion page on lolalytics. 
 On it press right-click and then Inspect, then open the Debugger tab if you're on Firefox or the Sources tab if you're on Chrome.    
-Then navigate to lolalytics.com > static > js > 665.0233b812.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 665, if there is none please DM me on Twitter or add an issue to this repo so I can update it)
+Then navigate to lolalytics.com > static > js > 665.fbba03cf.chunk.js (this filename changes whenever lolalytics is updated, but the first numbers don't always change, so if you don't find this exact filename then see if there's another that starts with 665, if there is none please DM me on Twitter or add an issue to this repo so I can update it)
 Select the text editor and press ctrl-a to select all the code and copy it.   
 
 Open the Resource Override extension, go to Options > Load Rules and select lolalytics_extrap_override_rules.json (that you can download from this repo).
@@ -38,4 +38,8 @@ After saving and exiting you should be done.
 
 You can verify the installation by checking the Extrapolated Sets on any champion with the devtools (the Inspect sidebar) open. If everything is working correctly then the phrase "Lolalytics Extrap Override is installed" should be printed in the console when you select one of the Extrapolated Sets tabs.
 
-### Whenever there is a significant change to lolalytics you'll need to redo these steps if you want to see the change.
+### If you want to disable the override for whatever reason you can always just disable it by going into Inspect Element > Overrides.
+
+### Whenever there is a significant change to lolalytics you'll need to redo the copy-pasting steps, and in some cases the whole installation (if one of those cases happens I'll add something to these instructions mentioning it).
+
+### Also, lolalytics is apparently getting a big rework to the frontend soon, so there's probably going to be some period of time during which the override won't work (while I figure out how to reimplement it).
