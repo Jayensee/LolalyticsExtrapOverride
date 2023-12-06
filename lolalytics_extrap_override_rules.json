@@ -1,1 +1,1 @@
-{"v":1,"data":[{"id":"d1","matchUrl":"*","rules":[{"type":"fileOverride","match":"https://lolalytics.com/static/js/665.*.chunk.js","file":"","fileId":"f1","on":true}],"on":true}]}
+{"v":1,"data":[{"id":"d1","matchUrl":"*","rules":[{"type":"fileOverride","match":"https://lolalytics.com/static/js/255.*.chunk.js","file":"","fileId":"f1","on":true}],"on":true}]}
