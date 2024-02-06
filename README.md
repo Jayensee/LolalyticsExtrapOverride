@@ -1,6 +1,6 @@
 # On February 5th 2024 Lolalytics got a major update that made this kind of override impossible. Unfortunately, this means that there is no longer any solution to the problems addressed by this override. If any of these solutions get added to Lolalytics I'll add a note on this README. 
 
-# If you've been using the override and you don't use Resource Override for anything else I recommend uninstalling it now.
+# For now, the override still works with the classic version of the site (classic.lolalytics.com). If you've already got it installed you need to replace the lolalytics.com in the override rules with classic.lolalytics.com
 
 # Lolalytics Extrap Override
 ## The 3 item set tabs on Lolalytics and their issues
