@@ -1,3 +1,7 @@
+
+# Update: On February 8th 2024 Lolalytics added a tab with the item sets as calculated in the override. It's labeled "Combined Sets", and it's sorted by pick rate.
+The only thing missing now is sorting by the lower bound of a confidence interval around the winrate
+
 # On February 5th 2024 Lolalytics got a major update that made this kind of override impossible. Unfortunately, this means that there is no longer any solution to the problems addressed by this override. If any of these solutions get added to Lolalytics I'll add a note on this README. 
 
 # For now, the override still works with the classic version of the site (classic.lolalytics.com). If you've already got it installed you need to replace the lolalytics.com in the override rules with classic.lolalytics.com
